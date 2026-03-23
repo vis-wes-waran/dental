@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: dental
+    name: dental-4
     runtime: python
     pythonVersion: "3.11.9"
     buildCommand: pip install -r requirements.txt

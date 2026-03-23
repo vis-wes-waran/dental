@@ -1,0 +1,130 @@
+🦷 Dental Appointment AI Agent – Step Instructions
+Step 1 — Detect Appointment Intent
+
+Goal: Identify that the user wants to book an appointment.
+
+User Input Example
+
+Hi, I want to book a dental appointment.
+
+AI Agent Action
+
+Detect intent: Book Appointment
+
+Ask for patient's full name
+
+Agent Response
+
+Hello! 👋 I can help you schedule a dental appointment.
+May I know your full name please?
+Step 2 — Collect Patient Name
+
+Input
+
+My name is Rahul Sharma
+
+AI Agent Action
+
+Extract name → Rahul Sharma
+
+Store in variable → patient_name
+
+Agent Response
+
+Nice to meet you Rahul! 😊
+What type of dental service do you need?
+
+1. General Checkup
+2. Tooth Pain
+3. Teeth Cleaning
+4. Braces Consultation
+5. Other
+Step 3 — Collect Dental Service
+
+Input
+
+Tooth pain
+
+AI Agent Action
+
+Extract service → Tooth Pain
+
+Save variable → service_type
+
+Agent Response
+
+I'm sorry to hear that 😟
+When would you like to visit the dentist?
+
+Available slots:
+• Tomorrow 10:00 AM
+• Tomorrow 2:00 PM
+• Tomorrow 5:30 PM
+Step 4 — Collect Appointment Time
+
+Input
+
+Tomorrow at 2:00 PM
+
+AI Agent Action
+
+Extract date/time → Tomorrow 2:00 PM
+
+Store variable → appointment_time
+
+Agent Response
+
+Great 👍
+Please provide your phone number so we can confirm the appointment.
+Step 5 — Collect Phone Number
+
+Input
+
+9876543210
+
+AI Agent Action
+
+Extract phone number
+
+Save variable → phone_number
+
+Step 6 — Show Appointment Summary
+
+AI Agent Response
+
+Here is your appointment summary:
+
+Patient Name: Rahul Sharma
+Service: Tooth Pain Consultation
+Date: Tomorrow
+Time: 2:00 PM
+Phone: 9876543210
+
+Should I confirm this appointment?
+Step 7 — Confirm Booking
+
+Input
+
+Yes
+
+AI Agent Action
+
+Save appointment in database
+
+Send confirmation SMS
+
+Mark appointment as confirmed
+
+Agent Response
+
+✅ Your appointment has been successfully booked!
+
+Clinic: Bright Smile Dental Clinic
+Date: Tomorrow
+Time: 2:00 PM
+
+You will receive a confirmation SMS shortly.
+If you need to reschedule or cancel, just message me anytime 😊
+
+example one conversation only example:
+User: Hi, I want to book a dental appointment. AI Agent: Hello! 👋 I can help you schedule a dental appointment. May I know your full name please? Step 2 — Collect Patient Name User: My name is Rahul Sharma. AI Agent: Nice to meet you, Rahul! 😊 What type of dental service do you need? Options: General Checkup Tooth Pain Teeth Cleaning Braces Consultation Other Step 3 — User Selects Service User: Tooth pain. AI Agent: I'm sorry to hear that 😟. When would you like to visit the dentist? Available slots: Tomorrow 10:00 AM Tomorrow 2:00 PM Tomorrow 5:30 PM Step 4 — User Chooses Time User: Tomorrow at 2:00 PM. AI Agent: Great 👍 Please provide your phone number so we can confirm the appointment. Step 5 — Collect Contact Details User: 9876543210 AI Agent: Thank you! 📞 Here is your appointment summary: Patient Name: Rahul Sharma Service: Tooth Pain Consultation Date: Tomorrow Time: 2:00 PM Phone: 9876543210 Should I confirm this appointment? Step 6 — Confirmation User: Yes. AI Agent: ✅ Your appointment has been successfully booked! Clinic: Bright Smile Dental Clinic Date: Tomorrow Time: 2:00 PM You will receive a confirmation SMS shortly.
